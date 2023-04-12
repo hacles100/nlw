@@ -28,6 +28,26 @@ const gamesList = [
     alt:"Imagem do jogo TFT"
   },
 
+];
+
+const channelsList = [
+  {
+    url:"https://avatars.githubusercontent.com/u/71661551?v=4" ,
+    imgUrl:"https://avatars.githubusercontent.com/u/71661551?v=4" ,
+    alt:"Imagem de Hericles Rocha"
+  },
+
+  {
+    url:"https://www.twitch.tv/alanzoka",
+    imgUrl:"https://avatars.githubusercontent.com/u/71661551?v=4" ,
+    alt:"Imagem de Hericles",
+  },
+
+  {
+    url:"https://www.twitch.tv/cellbit",
+    imgUrl:"https://avatars.githubusercontent.com/u/71661551?v=4" ,
+    alt:"Imagemd de Hericles",
+  },
 ]
 
 
@@ -60,8 +80,20 @@ function App() {
 
         <Section 
          title="Channels and Streamers"
-         subtitle="List of channels and broadcasts I don't miss!"
-        />
+         subtitle="List of channels and broadcasts I don't miss!">
+
+          {channelsList.map(function(item){
+            return(
+              <ListItem
+              url={item.url}
+              imgUrl={item.imgUrl}
+              alt={item.alt}
+              />
+            )
+          })}
+
+        </Section>
+
       </main>
 
     </div>
