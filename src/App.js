@@ -6,14 +6,19 @@ import Section from './components/Section';
 function App() {
   return (
     <div className='App'>
-      {/* Header */}
+
       <Header/>
 
-      {/* Main */}
       <main>
-        
-      {/* sections */}
-       <Section/>
+        <Section 
+          title="My Games"
+          subtitle="My favorite game to play"
+        />
+
+        <Section 
+         title="Channels and Streamers"
+         subtitle="List of channels and broadcasts I don't miss!"
+        />
       </main>
 
     </div>

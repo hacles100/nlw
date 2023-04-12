@@ -1,10 +1,10 @@
-function Section(){
+function Section(props){
     return(
 
       <section>
         <div>
-            <h2>My Games</h2>
-            <p>My favorite game to play!</p>
+            <h2>{props.title}</h2>
+            <p>{props.subtitle}</p>
 
              <ul class="games-list">
                 <li>
