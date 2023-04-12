@@ -60,7 +60,10 @@ function App() {
       <main>
         <Section 
           title="My Games"
-          subtitle="My favorite game to play">
+          subtitle="My favorite game to play"
+          className="games-list"
+          >
+
 
          {
           gamesList.map(function(item) {
@@ -80,7 +83,9 @@ function App() {
 
         <Section 
          title="Channels and Streamers"
-         subtitle="List of channels and broadcasts I don't miss!">
+         subtitle="List of channels and broadcasts I don't miss!"
+         className="channel-list"
+         >
 
           {channelsList.map(function(item){
             return(
@@ -91,6 +96,15 @@ function App() {
               />
             )
           })}
+
+        </Section>
+
+
+        <Section
+          title="My Networks"
+          subtitle="Connect with me right now!"
+          className="social-list"
+        >
 
         </Section>
 

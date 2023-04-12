@@ -7,7 +7,7 @@ function Section(props){
             <h2>{props.title}</h2>
             <p>{props.subtitle}</p>
 
-             <ul class="games-list">
+             <ul className={props.className}>
                {props.children}
             </ul>
         </div>
