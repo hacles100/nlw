@@ -1,5 +1,7 @@
 import './App.css';
 import Header from './components/Header';
+import Section from './components/Section';
+
 
 function App() {
   return (
@@ -8,8 +10,12 @@ function App() {
       <Header/>
 
       {/* Main */}
-
+      <main>
+        
       {/* sections */}
+       <Section/>
+      </main>
+
     </div>
   );
 }
