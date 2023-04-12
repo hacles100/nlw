@@ -46,9 +46,36 @@ const channelsList = [
   {
     url:"https://www.twitch.tv/cellbit",
     imgUrl:"https://avatars.githubusercontent.com/u/71661551?v=4" ,
-    alt:"Imagemd de Hericles",
+    alt:"Imagem do Hericles",
   },
-]
+];
+
+
+const socialMedia = [
+  {
+    url:"https://instagram.com/hericlesrocha1",
+    imgUrl:"/assets/instagram.svg",
+    alt:"Instagram do Instagram"
+  },
+
+  {
+    url:"https://twitch.com/haclesrocha",
+    imgUrl:"/assets/twitch.svg",
+    alt:"Imagem do Twitch"
+  },
+
+  {
+    url:"https://twitter.com",
+    imgUrl:"/assets/twitter.svg",
+    alt:"Imagem do Twitter"
+  },
+
+  {
+    url:"https://youtube.com",
+    imgUrl:"/assets/youtube.svg",
+    alt:"Imagem do Youtube"
+  }
+];
 
 
 function App() {
@@ -105,6 +132,16 @@ function App() {
           subtitle="Connect with me right now!"
           className="social-list"
         >
+
+          {socialMedia.map(function(item){
+            return(
+            <ListItem
+            url={item.url}
+            imgUrl={item.imgUrl}
+            alt={item.alt}
+            />
+            )
+          })}
 
         </Section>
 
